@@ -1,0 +1,202 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid rgb(220, 153, 20);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+    margin-right: 10px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: rgb(220, 153, 20);
+}
+
+
+
+
+
+
+
+/* Hero Section */
+#hero {
+	background-image: url(../tes.jpeg);
+	background-size: cover;
+	background-position: 0 -90px;
+	position: relative;
+	z-index: 1;
+}
+#hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: -1;
+}
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h1 {
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: white;
+}
+
+/* End Hero Section */
+
+/* login */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    /* margin-top: -570px;
+	margin-left: 500px; */
+	top: 55%;
+	left: 70%;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+	border-radius: 7%;
+	position: absolute;
+    transform: translate(-70%, -55%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+	/* transform: translateX(700px); */
+	/* transition: .5s ease-in-out opacity; */
+    pointer-events: none;
+    opacity: 0;
+}
+
+.showwrapper {
+	/* visibility: visible; */
+	transform: translate(-70%, -55%) scale(1);
+    opacity: 1;
+    /* transform: translateX(0); */
+    pointer-events: all;
+}
+
+.cancel {
+    margin-left: 280px;
+    margin-top: 3px;
+	cursor: pointer;
+    border-color: transparent;
+}
+
+
+.logo {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #a7aaa7,
+        -8px -8px 15px #fff;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(85, 114, 243);
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgb(29, 44, 114),
+        -3px -3px 3px rgb(120, 140, 230);
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: rgb(55, 80, 192);
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(85, 114, 243);
+}
+
+.wrapper a:hover {
+    color: rgb(85, 114, 243);
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+
+/* jkelar login */
